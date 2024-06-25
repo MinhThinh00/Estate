@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://estate-sigma-three.vercel.app/',
+        target: 'https://estate-sigma-three.vercel.app',
         secure: false,
       },
     },
