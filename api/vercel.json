@@ -1,15 +1,19 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "*.js",
-            "use": "@vercel/node"
-        }
+      { "src": "*.js", "use": "@vercel/node" }
     ],
     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
+      {
+        "src": "/api/(.*)",
+        "dest": "/*.js",
+        "headers": { "Access-Control-Allow-Origin": "*" }
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/",
+        "headers": { "Cache-Control": "public, max-age=3600" }
+      }
     ]
-}
+  }
+  
