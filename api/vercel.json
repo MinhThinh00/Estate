@@ -8,11 +8,6 @@
         "src": "/api/(.*)",
         "dest": "/*.js",
         "headers": { "Access-Control-Allow-Origin": "*" }
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/",
-        "headers": { "Cache-Control": "public, max-age=3600" }
       }
     ]
   }
