@@ -20,7 +20,7 @@ mongoose
 
 const app = express();
 app.use(cors({
-  origin: 'http://localhost:5173', // Thay đổi thành miền của ứng dụng của bạn
+  origin: 'https://estateclient-minh-thinhs-projects-c598b12c.vercel.app', // Thay đổi thành miền của ứng dụng của bạn
   credentials: true // Cho phép gửi cookie
 }));
 app.use(express.json());
